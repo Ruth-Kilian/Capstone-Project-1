@@ -1,24 +1,24 @@
 // get ids to display the ingredients
-let savedListS = document.getElementById("savedListS");
-let savedListM = document.getElementById("savedListM");
-let savedListP = document.getElementById("savedListP");
-let savedListC = document.getElementById("savedListC");
-let savedList2 = document.getElementById("savedList2");
-let savedList3 = document.getElementById("savedList3");
-let savedList4 = document.getElementById("savedList4");
-let savedList5 = document.getElementById("savedList5");
-let savedList6 = document.getElementById("savedList6");
+const savedListS = document.getElementById("savedListS");
+const savedListM = document.getElementById("savedListM");
+const savedListP = document.getElementById("savedListP");
+const savedListC = document.getElementById("savedListC");
+const savedList2 = document.getElementById("savedList2");
+const savedList3 = document.getElementById("savedList3");
+const savedList4 = document.getElementById("savedList4");
+const savedList5 = document.getElementById("savedList5");
+const savedList6 = document.getElementById("savedList6");
 
 // get saved lists from local stroage
-let savedListHtmlS = localStorage.getItem("saveListS");
-let savedListHtmlM = localStorage.getItem("saveListM");
-let savedListHtmlP = localStorage.getItem("saveListP");
-let savedListHtmlC = localStorage.getItem("saveListC");
-let savedListHtml2 = localStorage.getItem("saveList2");
-let savedListHtml3 = localStorage.getItem("saveList3");
-let savedListHtml4 = localStorage.getItem("saveList4");
-let savedListHtml5 = localStorage.getItem("saveList5");
-let savedListHtml6 = localStorage.getItem("saveList6");
+const savedListHtmlS = localStorage.getItem("saveListS");
+const savedListHtmlM = localStorage.getItem("saveListM");
+const savedListHtmlP = localStorage.getItem("saveListP");
+const savedListHtmlC = localStorage.getItem("saveListC");
+const savedListHtml2 = localStorage.getItem("saveList2");
+const savedListHtml3 = localStorage.getItem("saveList3");
+const savedListHtml4 = localStorage.getItem("saveList4");
+const savedListHtml5 = localStorage.getItem("saveList5");
+const savedListHtml6 = localStorage.getItem("saveList6");
 
 // display the ingredients
 savedListS.innerHTML = savedListHtmlS;

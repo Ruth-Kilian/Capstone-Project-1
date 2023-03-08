@@ -1,12 +1,12 @@
 // Save to grocery list button
-let saveButton = document.getElementById("saveButton");
-let saveList = document.getElementById("saveList3");
+const saveButton = document.getElementById("saveButton");
+const saveList = document.getElementById("saveList3");
 
 saveButton.addEventListener("click", function() {
-    let listHtml = saveList.innerHTML;
+    const listHtml = saveList.innerHTML;
     localStorage.setItem("saveList3", listHtml);
 
-    let lengthLocalStorage = localStorage.length
+    const lengthLocalStorage = localStorage.length
     alert("You have " + lengthLocalStorage + " ingredient list(s) in your grocery list.")
 });
 
@@ -32,11 +32,11 @@ class User{
     }
   }
   
-  let users = []
+  const users = []
   
   // function to "send" Email
   function sendEmail() {
-    let newUser =  new User (
+    const newUser =  new User (
         document.getElementById("userName").value,
         document.getElementById("userEmail").value,
         document.getElementById("userMessage").value,
@@ -76,9 +76,9 @@ function addComment() {
 	const commentsList = document.getElementById("userComments3");
 	const li = document.createElement("li");
 
-  let date = new Date();
-	let currentDate = date.getFullYear()+"-"+(date.getMonth()+1)+"-"+ date.getDate();
-	let currentTime = date.getHours()+":"+date.getMinutes();
+  const date = new Date();
+	const currentDate = date.getFullYear()+"-"+(date.getMonth()+1)+"-"+ date.getDate();
+	const currentTime = date.getHours()+":"+date.getMinutes();
 
 	li.textContent = "commented " + "\"" + newComment3 + "\"" + " at " + currentTime  + " on " + currentDate;
 	commentsList.appendChild(li);
