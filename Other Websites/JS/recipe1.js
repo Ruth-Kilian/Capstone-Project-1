@@ -1,47 +1,47 @@
 // save to grocery list buttons
-let saveButton = document.getElementById("saveButton");
-let saveListS = document.getElementById("saveListS");
+const saveButton = document.getElementById("saveButton");
+const saveListS = document.getElementById("saveListS");
 
 saveButton.addEventListener("click", function() {
-    let listHtml = saveListS.innerHTML;
+    const listHtml = saveListS.innerHTML;
     localStorage.setItem("saveListS", listHtml);
 
-    let lengthLocalStorage = localStorage.length
+    const lengthLocalStorage = localStorage.length
     alert("You have " + lengthLocalStorage + " ingredient list(s) in your grocery list.")
 });
 
-let saveButton2 = document.getElementById("saveButton2");
-let saveListM = document.getElementById("saveListM");
+const saveButton2 = document.getElementById("saveButton2");
+const saveListM = document.getElementById("saveListM");
 
 saveButton2.addEventListener("click", function() {
-    let listHtml = saveListM.innerHTML;
+    const listHtml = saveListM.innerHTML;
     localStorage.setItem("saveListM", listHtml);
 
-    let lengthLocalStorage = localStorage.length
+    const lengthLocalStorage = localStorage.length
     alert("You have " + lengthLocalStorage + " ingredient list(s) in your grocery list.")
 });
 
-let saveButton3 = document.getElementById("saveButton3");
-let saveListP = document.getElementById("saveListP");
+const saveButton3 = document.getElementById("saveButton3");
+const saveListP = document.getElementById("saveListP");
 
 
 saveButton3.addEventListener("click", function() {
-    let listHtml = saveListP.innerHTML;
+    const listHtml = saveListP.innerHTML;
     localStorage.setItem("saveListP", listHtml);
 
-    let lengthLocalStorage = localStorage.length
+    const lengthLocalStorage = localStorage.length
     alert("You have " + lengthLocalStorage + " ingredient list(s) in your grocery list.")
 });
 
-let saveButton4 = document.getElementById("saveButton4");
-let saveListC = document.getElementById("saveListC");
+const saveButton4 = document.getElementById("saveButton4");
+const saveListC = document.getElementById("saveListC");
 
 
 saveButton4.addEventListener("click", function() {
-    let listHtml = saveListC.innerHTML;
+    const listHtml = saveListC.innerHTML;
     localStorage.setItem("saveListC", listHtml);
 
-    let lengthLocalStorage = localStorage.length
+    const lengthLocalStorage = localStorage.length
     alert("You have " + lengthLocalStorage + " ingredient list(s) in your grocery list.")
 });
 
@@ -79,11 +79,11 @@ class User{
   }
 }
 
-let users = []
+const users = []
 
 // function to "send" Email
 function sendEmail() {
-  let newUser =  new User (
+  const newUser =  new User (
       document.getElementById("userName").value,
       document.getElementById("userEmail").value,
       document.getElementById("userMessage").value,
@@ -123,9 +123,9 @@ function addComment() {
 	const commentsList = document.getElementById("userComments");
 	const li = document.createElement("li");
 
-  let date = new Date();
-	let currentDate = date.getFullYear()+"-"+(date.getMonth()+1)+"-"+ date.getDate();
-	let currentTime = date.getHours()+":"+date.getMinutes();
+  const date = new Date();
+	const currentDate = date.getFullYear()+"-"+(date.getMonth()+1)+"-"+ date.getDate();
+	const currentTime = date.getHours()+":"+date.getMinutes();
 
 	li.textContent = "commented " + "\"" + newComment + "\"" + " at " + currentTime  + " on " + currentDate;
 	commentsList.appendChild(li);

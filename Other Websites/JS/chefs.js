@@ -8,11 +8,11 @@ class User{
   }
 }
 
-let users = []
+const users = []
 
 // function to "send" Email
 function sendEmail() {
-  let newUser =  new User (
+  const newUser =  new User (
       document.getElementById("userName").value,
       document.getElementById("userEmail").value,
       document.getElementById("userMessage").value,
