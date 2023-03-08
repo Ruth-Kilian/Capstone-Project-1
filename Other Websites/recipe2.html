@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+    <head>
+        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <link href = "CSS/recipeStyle2.css" rel = "stylesheet" type = "text/css"> 
+        <title>Soetkoekies</title>
+    </head>
+    <body>
+        <!--Navigation-->
+        <header>
+            <nav class = "nav-area">
+                <ul>
+                    <li><a href ="../index.html">Home</a></li>
+                    <li><a href ="">Recipes</a>
+                        <ul>
+                            <li><a href = "recipe1.html">Dynamic Duo</a></li>
+                            <li><a href = "recipe2.html">Soetkoekies</a></li>
+                            <li><a href = "recipe3.html">Peanut Butter Biscuits</a></li>
+                            <li><a href = "recipe4.html">Oatmeal Choc Chip Biscuits</a></li>
+                            <li><a href = "recipe5.html">Double Choc-Chip Cookies</a></li>
+                            <li><a href = "recipe6.html">Snickerdoodles</a></li>
+                        </ul>
+                    </li>
+                    <li><a href = "chefs.html">Chefs</a></li>
+                    <li><a href = "groceryList.html">Grocery List</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!--Heading-->
+        <div class = "container-fluid">
+            <div class = "row p-3">
+                <div class = "col-md-12 text-center">
+                    <h1>Soetkoekies</h1>
+                    <p>These are my father's favourite cookies.</p>
+                </div>
+            </div>
+        </div>
+
+        <!--Like button-->
+        <div class = "container-fluid">
+            <div class = "row">
+                <div class = "col-md-12 text-center">
+                    <button onclick="recipe2()">Like</button>
+                    <label id="like2"></label><br><br>
+                </div>
+            </div>
+        </div>
+
+
+        <!--Ingredients-->
+        <div class = "container-fluid">
+            <div class = "row p-3">
+                <div class = "col-md-4">
+                    <h2>Ingredients:</h2>
+                    <table>
+                        <tr>
+                            <th>Prep time: </th>
+                            <td>10 minutes</td>
+                        </tr>
+                        <tr>
+                            <th>Baking time: </th>
+                            <td>10-15 minutes</td>
+                        </tr>
+                        <tr>
+                            <th>Serves: </th>
+                            <td>30</td>
+                        </tr>
+                    </table>
+                    <hr>
+                        <ul id="saveList2">
+                            <li>500g self raising flour</li>
+                            <li>250g margarine</li>
+                            <li>500ml sugar</li>
+                            <li>3 eggs</li>
+                        </ul>
+                        <button id="saveButton">Save to Grocery list</button>
+                </div>
+                <div class = "col-md-1">
+
+                </div>
+
+                <!--Method-->
+                <div class = "col-md-7">
+                    <h2>Method</h2>
+                    <ol>
+                        <li>Rub marg and sugar together.</li>
+                        <li>Add flour and mix well, now add the eggs</li>
+                        <li>Roll out and cut out</li>
+                        <li>Bake at 160˚C until golden brown</li>
+                    </ol>
+                    <!--Soetkoekies image-->
+                    <img src = "https://i0.wp.com/www.mischiefmanaged.co.za/wp-content/uploads/2015/12/gallery_nrm_1418753313-basic-shortbread-cookies-recipe.jpg?ssl=1" alt = "Soetkoekies" width = "700">
+                </div>
+            </div>
+        </div>
+
+        <hr>
+        
+        <!--Contact me & Leave a comment forms-->
+        <div class = "container-fluid">
+            <div class = "row p-3">
+                <div class = "col-md-5">
+                    <h3>Contact me</h3>
+                    <br>
+                    <label for="userName">Full Name:</label><br>
+                    <input type="text" class="form-control" id="userName" placeholder="Full Name"><br><br>
+                    <label for="userEmaile">Email</label><br>
+                    <input type="text" class="form-control" id="userEmail"  placeholder="Email"><br><br>
+                    <label for="userMessage">Your message</label><br>
+                    <textarea id="userMessage" class="form-control" placeholder="Message"></textarea><br>
+                    <br>
+                    <button onclick ="sendEmail()">Send Email</button>
+                </div>
+                <div class="col-md-2"></div>
+                <div class = "col-md-5">
+                    <h3>Leave a comment</h3>
+                    <br>
+                    <textarea type="text" id="newComment2" class="form-control" placeholder="Your comment"></textarea><br>
+                    <button onclick="addComment()">Add Comment</button>
+                    <ul id="userComments2"></ul>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="JS/recipe2.js"></script>
+    </body>
+</html>

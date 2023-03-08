@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+    <head>
+        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <link href = "CSS/recipeStyle3.css" rel = "stylesheet" type = "text/css"> 
+        <title>Peanut Butter Biscuits</title>
+    </head>
+    <body>
+        <!--Navigation-->
+        <header>
+            <nav class = "nav-area">
+                <ul>
+                    <li><a href ="../index.html">Home</a></li>
+                    <li><a href ="">Recipes</a>
+                        <ul>
+                            <li><a href = "recipe1.html">Dynamic Duo</a></li>
+                            <li><a href = "recipe2.html">Soetkoekies</a></li>
+                            <li><a href = "recipe3.html">Peanut Butter Biscuits</a></li>
+                            <li><a href = "recipe4.html">Oatmeal Choc Chip Biscuits</a></li>
+                            <li><a href = "recipe5.html">Double Choc-Chip Cookies</a></li>
+                            <li><a href = "recipe6.html">Snickerdoodles</a></li>
+                        </ul>
+                    </li>
+                    <li><a href = "chefs.html">Chefs</a></li>
+                    <li><a href = "groceryList.html">Grocery List</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <!--Heading-->
+        <div class = "container-fluid">
+            <div class = "row p-3">
+                <div class = "col-md-12 text-center">
+                    <h1>Peanut Butter Biscuits</h1>
+                    <p>These are my mother's favourite biscuits.</p>
+                </div>
+            </div>
+        </div>
+
+        <!--Like button-->
+        <div class = "container-fluid">
+            <div class = "row">
+                <div class = "col-md-12 text-center">
+                    <button onclick="recipe3()">Like</button>
+                    <label id="like3"></label><br><br>
+                </div>
+            </div>
+        </div>
+
+        <!--Ingredients-->
+        <div class = "container-fluid">
+            <div class = "row p-3">
+                <div class = "col-md-4">
+                    <h2>Ingredients:</h2>
+                    <table>
+                        <tr>
+                            <th>Prep time: </th>
+                            <td>10 minutes</td>
+                        </tr>
+                        <tr>
+                            <th>Baking time: </th>
+                            <td>10-15 minutes</td>
+                        </tr>
+                        <tr>
+                            <th>Serves: </th>
+                            <td>30</td>
+                        </tr>
+                    </table>
+                    <hr>
+                        <ul id="saveList3">
+                            <li>350ml flour</li>
+                            <li>2ml bicarb</li>
+                            <li>100g marg</li>
+                            <li>75g white sugar</li>
+                            <li>1 egg</li>
+                            <li>2ml baking powder</li>
+                            <li>Pinch salt</li>
+                            <li>30g peanut butter</li>
+                            <li>75g brown sugar</li>
+                        </ul>
+                        <button id="saveButton">Save to Grocery list</button>
+                </div>
+                <div class = "col-md-1">
+
+                </div>
+
+                <!--Method-->
+                <div class = "col-md-7">
+                    <h2>Method</h2>
+                    <ol>
+                        <li>Sift flour, baking powder, salt and bicarb together</li>
+                        <li>Add remaining ingredients and mix well</li>
+                        <li>Press into shapes and bake at 150˚C for 8 – 10mins</li>
+                    </ol>
+                    <!--Peanut Butter Biscuits image-->
+                    <img src = "https://tmbidigitalassetsazure.blob.core.windows.net/rms3-prod/attachments/37/1200x1200/Healthy-Peanut-Butter-Cookies_EXPS_FT19_247269_F_1203_1.jpg" alt = "Peanut Butter Biscuits" width = "500">
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <!--Contact me & Leave a comment forms-->
+        <div class = "container-fluid">
+            <div class = "row p-3">
+                <div class = "col-md-5">
+                    <h3>Contact me</h3>
+                    <br>
+                    <label for="userName">Full Name:</label><br>
+                    <input type="text" id="userName" class="form-control" placeholder="Full Name"><br><br>
+                    <label for="userEmaile">Email</label><br>
+                    <input type="text" id="userEmail" class="form-control" placeholder="Email"><br><br>
+                    <label for="userMessage">Your message</label><br>
+                    <textarea id="userMessage" class="form-control" placeholder="Message"></textarea><br>
+                    <br>
+                    <button onclick ="sendEmail()">Send Email</button>
+                </div>
+                <div class="col-md-2"></div>
+                <div class = "col-md-5">
+                    <h3>Leave a comment</h3>
+                    <br>
+                    <textarea type="text" id="newComment3" class="form-control" placeholder="Your comment"></textarea><br>
+                    <button onclick="addComment()">Add Comment</button>
+                    <ul id="userComments3"></ul>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="JS/recipe3.js"></script>
+    </body>
+</html>

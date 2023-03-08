@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+    <head>
+        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <link href = "CSS/recipeStyle1.css" rel = "stylesheet" type = "text/css"> 
+        <title>Dynamic Duo</title>
+    </head>
+    <body>
+        <!--Navigation-->
+        <header>
+            <nav class = "nav-area">
+                <ul>
+                    <li><a href ="../index.html">Home</a></li>
+                    <li><a href ="">Recipes</a>
+                        <ul>
+                            <li><a href = "recipe1.html">Dynamic Duo</a></li>
+                            <li><a href = "recipe2.html">Soetkoekies</a></li>
+                            <li><a href = "recipe3.html">Peanut Butter Biscuits</a></li>
+                            <li><a href = "recipe4.html">Oatmeal Choc Chip Biscuits</a></li>
+                            <li><a href = "recipe5.html">Double Choc-Chip Cookies</a></li>
+                            <li><a href = "recipe6.html">Snickerdoodles</a></li>
+                        </ul>
+                    </li>
+                    <li><a href = "chefs.html">Chefs</a></li>
+                    <li><a href = "groceryList.html">Grocery List</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!--Heading-->
+        <div class = "container-fluid">
+            <div class = "row">
+                <div class = "col-md-12 text-center">
+                    <h1>Dynamic Duo</h1>
+                    <p>The follwing recipes are "award-winning" family recipes (cooked by my mother and brother) on <a target = "_blank" href = "https://www.youtube.com/watch?v=_fR-aYmnE84&t=1s"><cite>Clover's Little Big Cook-Off</cite></a>.</p>
+                </div>
+            </div>
+        </div>
+
+        <!--Like button-->
+        <div class = "container-fluid">
+            <div class = "row">
+                <div class = "col-md-12 text-center">
+                    <button onclick="recipe()">Like</button>
+                    <label id="like"></label><br><br>
+                </div>
+            </div>
+        </div>
+
+        <!--Heading-->
+        <div class = "container-fluid">
+            <div class = "row">
+                <div class = "col-md-12 text-center">
+                    <h1>Meatballs in tomato sauce</h1>
+                </div>
+            </div>
+        </div>
+
+        <!--Ingredients-->
+        <div class = "container-fluid">
+            <div class = "row p-3">
+                <div class = "col-md-4">
+                    <h2>Ingredients:</h2>
+                    <table>
+                        <tr>
+                            <th>Prep time: </th>
+                            <td>20 minutes</td>
+                        </tr>
+                        <tr>
+                            <th>Cooking time: </th>
+                            <td>1 hour</td>
+                        </tr>
+                        <tr>
+                            <th>Serves: </th>
+                            <td>4-6</td>
+                        </tr>
+                    </table>
+                    <h3>Sauce:</h3>
+                        <ul id = "saveListS">
+                            <li>15ml butter</li>
+                            <li>2 x 410g cans tomatoes</li>
+                            <li>1 onion, chopped</li>
+                            <li>1 garlic clove, crushed</li>
+                            <li>10g basil leaves, chopped</li>
+                            <li>3 sticks celery, chopped</li>
+                            <li>2 medium carrots, grated</li>
+                            <li>125ml red wine</li>
+                            <li>500ml beef stock</li>
+                            <li>Sugar to taste</li>
+                            <li>1 x 70g tomato puree</li>
+                            <li>Salt and pepper to taste</li>
+                        </ul>
+                        <button id="saveButton">Save to Grocery list</button>
+                    <h3>Meatballs:</h3>
+                        <ul id = "saveListM">
+                            <li>1kg lean beef mince</li>
+                            <li>250ml oats, ground</li>
+                            <li>30ml fresh parsley, chopped</li>
+                            <li>1 egg, beaten</li>
+                            <li>1 onion, finely chopped</li>
+                            <li>1 garlic clove, finely chopped</li>
+                            <li>1 lemon, zested and juiced</li>
+                            <li>Salt and pepper to taste</li>
+                            <li>125ml parmesan cheese, grated</li>
+                        </ul>
+                        <button id="saveButton2">Save to Grocery list</button>
+                    <h3>Pasta:</h3>
+                        <ul id = "saveListP">
+                            <li>3 eggs at room temperature</li>
+                            <li>45ml warm water</li>
+                            <li>15ml olive oil</li>
+                            <li>5ml salt</li>
+                            <li>300g bread flour</li>
+                            <li>150g semolina flour, for dusting</li>
+                        </ul>
+                        <button id="saveButton3">Save to Grocery list</button>
+                </div>
+
+                <div class = "col-md-1">
+
+                </div>
+
+                <!--Method-->
+                <div class = "col-md-7">
+                    <h2>Method</h2>
+                    <h3>For the sauce:</h3>
+                    <p>
+                        Heat a pressure cooker on medium heat and add the butter, fry the garlic and onion until golden.
+                        Place the remaining ingredients into the pressure cooker, seal and allow to cook approximately 30 minutes.
+                        Allow to cool before using a stick blender to blend the sauce until slighly smooth. Keep aside.
+                    </p>
+                    <h3>For the meatballs:</h3>
+                    <p>
+                        Preheat oven to 190°C. In a mixing bowl, combine all ingredients until well mixed.
+                        Using a 25ml measuring spoon, measure out the mixture and roll into balls.
+                        Place rolled meatballs onto a greased roasing tray and place into the oven.
+                        Once meatballs are cooked (browned), pour the sauce over the balls and allow to warm in the oven.
+                    </p>
+                    <h3>For the pasta:</h3>
+                    <p>
+                        Sieve together the dry ingredients in a large bowl. Make a well in the centre and place the eggs in, add salt and olive oil.
+                        Gently beat the eggs and mix in the dry ingredients with a fork, incorporating the sides of the flour as you mix in the eggs.
+                        Mix the dough into a ball, wrap in cling wrap and place in the fridge for 10 minutes.
+                        Slice small portions with a knife and roll pasta through the pasta machine on the thickest setting until the dough is nice and smooth.
+                        Roll the pasta through the machine, making it thinner by one setting at a time until the pasta is 2mm thick.
+                        Attach the cutting roller onto the pasta machine and cut the pasta sheets. Place on a tray dredgen with semolina. Set aside.
+                        Bring a large pot of salted water to boil and cook the pasta for 3 minutes until al dente.
+                        Serve the cooked pasta with the meatballs and tomato sauce.
+                    </p>
+                    <!--Meatball image-->
+                    <div class = "row">
+                        <img src = "https://ddsdawatdilse.com/wp-content/uploads/2019/05/fusion-fettuccine-with-meatballs-3-Blog-1.jpg" alt = "Dynamic Duo" width = "100">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <!--Heading-->
+        <div class = "container-fluid">
+            <div class = "row p-5">
+                <div class = "col-md-12 text-center">
+                    <h1>Chocolate pudding (Ouma Kilian)</h1>
+                </div>
+            </div>
+        </div>
+
+        <!--Like button-->
+        <div class = "container-fluid">
+            <div class = "row">
+                <div class = "col-md-12 text-center">
+                    <button onclick="recipe1()">Like</button>
+                    <label id="like1"></label><br><br>
+                </div>
+            </div>
+        </div>
+
+        <!--Ingredients-->
+        <div class = "container-fluid">
+            <div class = "row p-3">
+                <div class = "col-md-4">
+                    <h2>Ingredients:</h2>
+                    <table>
+                        <tr>
+                            <th>Prep time: </th>
+                            <td>5 minutes</td>
+                        </tr>
+                        <tr>
+                            <th>Cooking time: </th>
+                            <td>10 minutes</td>
+                        </tr>
+                        <tr>
+                            <th>Serves: </th>
+                            <td>4-6</td>
+                        </tr>
+                    </table>
+                    <hr>
+                        <ul id = "saveListC">
+                            <li>2 x 200g of Cadbury chocolate</li>
+                            <li>1 tin condensed milk</li>
+                            <li>8 Tennis biscuits (Optional)</li>
+                            <li>500ml cream</li>
+                        </ul>
+                        <button id="saveButton4">Save to Grocery list</button>
+                </div>
+
+                <div class = "col-md-1">
+
+                </div>
+
+                <!--Method-->
+                <div class = "col-md-7">
+                    <h2>Method</h2>
+                    <ol>
+                        <li>Melt chocolate in microwave oven.</li>
+                        <li>Add condensed milk and stir quickly.</li>
+                        <li>Add to whipped cream.</li>
+                        <li>Mix well.</li>
+                        <li>Crush Tennis biscuits and put it in the bottom of your bowl.</li>
+                        <li>Pour "mix" on top of biscuits and mix.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <!--Contact me & Leave a comment forms-->
+        <div class = "container-fluid">
+            <div class = "row p-3">
+                <div class = "col-md-5">
+                    <h3>Contact me</h3>
+                    <br>
+                    <label for="userName">Full Name:</label><br>
+                    <input type="text" class="form-control" id="userName" placeholder="Full Name"><br><br>
+                    <label for="userEmaile">Email</label><br>
+                    <input type="text" class="form-control" id="userEmail"  placeholder="Email"><br><br>
+                    <label for="userMessage">Your message</label><br>
+                    <textarea class="form-control" id="userMessage" placeholder="Message"></textarea><br>
+                    <br>
+                    <button onclick ="sendEmail()">Send Email</button>
+                </div>
+                <div class = "col-md-2"></div>
+                <div class = "col-md-5">
+                    <h3>Leave a comment</h3>
+                    <br>
+                    <textarea type="text" class="form-control" id="newComment" placeholder="Your comment"></textarea><br>
+                    <button onclick="addComment()">Add Comment</button>
+                    <ul id="userComments"></ul>
+                </div>
+            </div>
+        </div>
+
+
+        <script type="text/javascript" src="JS/recipe1.js"></script>
+    </body>
+</html>
